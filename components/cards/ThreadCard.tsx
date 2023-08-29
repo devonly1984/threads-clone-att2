@@ -47,7 +47,7 @@ isComment}:Props) => {
                     <h4 className="cursor-pointer text-base-semibold text-light-1">{author.name}</h4>
                 </Link>
                 <p className="mt-2 text-small-regular text-light-2">{content}</p>
-                <div className="mt-5 flex flex-col gap-3">
+                <div className={`${isComment && 'mb-10'} mt-5 flex flex-col gap-3`}>
                     <div className="flex gap-3.5">
                         <Image src="/assets/heart-gray.svg" alt="heart" width={24} height={24} className="object-contain cursor-pointer"/>
                         <Link href={`/thread/${id}`}>
